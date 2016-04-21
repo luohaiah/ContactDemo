@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.byheetech.freecall.view.ContactSearchView
+        android:id="@+id/contactSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></com.byheetech.freecall.view.ContactSearchView>
+    <!--特别注意ListView divider="@color/xx 配合android:dividerHeight="0dp" 这种写法是错误的会影响onscroll回调接口的firstVisibleItem的值导致偏1误差，应该这样写
+        android:divider="@null"
+        android:dividerHeight="0dp""-->
+    <ListView
+        android:id="@+id/contactLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contactSearchView"
+        android:divider="@null"
+        android:dividerHeight="0dp"></ListView>
+
+    <TextView
+        android:id="@+id/contactTv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_corner_gray"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <com.byheetech.freecall.view.QuickAlphabeticBar
+        android:id="@+id/contactQuickBar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactSearchView" />
+
+    <com.byheetech.freecall.view.ContactIndexView
+        android:id="@+id/contactIndex"
+        android:layout_width="50dp"
+        android:layout_below="@+id/contactSearchView"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/contactQuickBar"
+        android:visibility="gone"></com.byheetech.freecall.view.ContactIndexView>
+</RelativeLayout>

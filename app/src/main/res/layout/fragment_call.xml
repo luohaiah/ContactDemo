@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/callListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/selector_white_gray"></ListView>
+
+    <ListView
+        android:id="@+id/indexContactListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></ListView>
+
+    <com.byheetech.freecall.view.T9TelephoneDialpadView
+        android:id="@+id/callT9Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"></com.byheetech.freecall.view.T9TelephoneDialpadView>
+
+</FrameLayout>

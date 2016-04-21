@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">通讯录demo</string>
+    <string name="call">拨号</string>
+    <string name="contact">联系人</string>
+    <string name="phone_number_count">(%d个号码)</string>
+    <string name="click_to_hide">点击可隐藏</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">Title activity main</string>
+</resources>
